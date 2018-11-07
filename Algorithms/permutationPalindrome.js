@@ -1,11 +1,11 @@
 // find if permutation of string includes palindrome
 
 const isPalindrome = s => {
-    let countArr = [];
+    let countArr = new Array(128).fill(0);
 
-    for (let i = 0; i < 128; i++) {
-        countArr[i] = 0;
-    }
+    // for (let i = 0; i < 128; i++) {
+    //     countArr[i] = 0;
+    // }
 
     for (let j = 0; j < s.length; j++) {
         if (s[j] != ' ') {

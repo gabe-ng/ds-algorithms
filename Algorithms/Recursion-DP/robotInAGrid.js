@@ -3,33 +3,6 @@
 //param: [[]] - array of arrays
 //result: [] - array of coordinates
 
-// Recursion
-// const finalCoord = (arr, coords) => {
-//     if (coords[0] === arr.length - 1 && coords[1] === arr[0].length - 1) {
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
-
-// const validCoord = (arr, coords) => {
-//     // console.log(arr, coords);
-//     if (arr[coords[0]][coords[1]] === "x") {
-//         return false;
-//     } else {
-//         return true;
-//     }
-// }
-
-// const inBounds = (arr, coords) => {
-//     // console.log("1:", arr.length - 1, "0:", arr[0].length-1, "coords", coords );
-//     if ((coords[0] > arr.length - 1) || (coords[1] > arr[0].length - 1)) {
-//         return false;
-//     } else {
-//         return true;
-//     }
-// }
-
 const getPath = (arr, coords, path) => {
     if ((coords[0]) > arr.length -1 || (coords[1] > arr[0].length -1) || arr[coords[0]][coords[1]] === "x") return false;
 
